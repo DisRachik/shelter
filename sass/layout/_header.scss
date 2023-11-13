@@ -1,0 +1,62 @@
+.header {
+	background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
+		#211f20;
+
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.header--container {
+	display: flex;
+	align-items: center;
+}
+
+// Logo
+.logo {
+	font-size: 32px;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+
+	color: getColor('accent');
+}
+
+.logo__subtitle {
+	display: block;
+	margin-top: 10px;
+
+	@include font(13px);
+	line-height: 1.15;
+	letter-spacing: 0.1em;
+
+	color: getColor('light');
+}
+
+// Navigation
+.nav {
+	margin-left: auto;
+
+	@include font(15px);
+	line-height: 1.6;
+
+	color: getColor('light-secondary');
+}
+.nav__list {
+	display: flex;
+	gap: 35px;
+}
+.nav__link {
+	padding-top: 16px;
+	padding-bottom: 16px;
+
+	@include animated(color);
+
+	&--active {
+		border-bottom: 3px solid getColor('accent');
+		color: getColor('light');
+	}
+
+	&:hover,
+	&:focus {
+		color: getColor('light');
+	}
+}

@@ -1,14 +1,19 @@
 // Parameters for the font
-@mixin fontProportions($size, $height, $spacing: 0.03em) {
+@mixin font(
+	$size: none,
+	$font: (
+		'Arial',
+		sans-serif,
+	)
+) {
+	font-family: $font;
 	font-size: $size;
-	line-height: $height;
-	letter-spacing: $spacing;
 }
 
 // Animation of transitions
 @mixin animated($property...) {
 	transition-property: $property;
-	transition-duration: 250ms;
+	transition-duration: 400ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 

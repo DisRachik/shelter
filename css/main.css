@@ -228,10 +228,12 @@ body {
   font-family: "Georgia", serif;
   font-size: 15px;
   line-height: 1.1;
+  background-color: #ffffff;
   scroll-behavior: smooth;
 }
 
 .container {
+  outline: 1px solid tomato;
   margin: 0 auto;
   padding-right: 40px;
   padding-left: 40px;
@@ -242,4 +244,72 @@ body {
   outline: 1px solid greenyellow;
   padding-top: 80px;
   padding-bottom: 100px;
+}
+.section:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.header {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+}
+
+.logo__subtitle {
+  display: block;
+  margin-top: 10px;
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.nav {
+  margin-left: auto;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cdcdcd;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+}
+
+.nav__link {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link--active {
+  border-bottom: 3px solid #f1cdb3;
+  color: #ffffff;
+}
+.nav__link:hover, .nav__link:focus {
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

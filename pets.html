@@ -89,13 +89,15 @@
 		<!-- connecting styles -->
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
+
 	<body>
-		<header>
-			<div class="container">
-				<h1>
-					<a href="./index.html" class="header__title">
+		<!-- Header -->
+		<header class="header header--pets">
+			<div class="container header--container">
+				<h1 class="logo">
+					<a href="./index.html" class="logo__title">
 						Cozy House
-						<span class="header__subtitle">Shelter for pets in Boston</span>
+						<span class="logo__subtitle">Shelter for pets in Boston</span>
 					</a>
 				</h1>
 				<nav class="nav">
@@ -109,10 +111,10 @@
 							</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link">Help the shelter</a>
+							<a href="./index.html#help" class="nav__link">Help the shelter</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link">Contacts</a>
+							<a href="#footer" class="nav__link">Contacts</a>
 						</li>
 					</ul>
 				</nav>
@@ -129,251 +131,235 @@
 
 					<ul class="friends-card">
 						<li class="friends-card__item">
-							<a href="javascript:void(0);" class="friend-card__link">
-								<picture class="friend-card__img">
-									<source
-										srcset="
-											./images/pets/pets-katrine.webp    1x,
-											./images/pets/pets-katrine@2x.webp 2x
-										"
-										type="image/webp"
-										media="(max-width: 767.98px)"
-									/>
-									<source
-										srcset="
-											./images/pets/pets-katrine.jpg    1x,
-											./images/pets/pets-katrine@2x.jpg 2x
-										"
-										type="image/jpeg"
-									/>
-									<img
-										src="./images/pets/pets-katrine.jpg"
-										alt="Cat - British Shorthair"
-										width="270"
-										height="270"
-										loading="lazy"
-									/>
-								</picture>
-								<h3 class="friend-card__title">Katrine</h3>
-								<button class="btn friend-card--btn">Learn more</button>
-							</a>
+							<picture class="friend-card__img">
+								<source
+									srcset="
+										./images/pets/pets-katrine.webp    1x,
+										./images/pets/pets-katrine@2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767.98px)"
+								/>
+								<source
+									srcset="
+										./images/pets/pets-katrine.jpg    1x,
+										./images/pets/pets-katrine@2x.jpg 2x
+									"
+									type="image/jpeg"
+								/>
+								<img
+									src="./images/pets/pets-katrine.jpg"
+									alt="Cat - British Shorthair"
+									width="270"
+									height="270"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="friend-card__title">Katrine</h3>
+							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
 						<li class="friends-card__item">
-							<a href="javascript:void(0);" class="friend-card__link">
-								<picture class="friend-card__img">
-									<source
-										srcset="
-											./images/pets/pets-jennifer.webp    1x,
-											./images/pets/pets-jennifer@2x.webp 2x
-										"
-										type="image/webp"
-										media="(max-width: 767.98px)"
-									/>
-									<source
-										srcset="
-											./images/pets/pets-jennifer.jpg    1x,
-											./images/pets/pets-jennifer@2x.jpg 2x
-										"
-										type="image/jpeg"
-									/>
-									<img
-										src="./images/pets/pets-jennifer.jpg"
-										alt="puppy - Labrador"
-										width="270"
-										height="270"
-										loading="lazy"
-									/>
-								</picture>
-								<h3 class="friend-card__title">Jennifer</h3>
-								<button class="btn friend-card--btn">Learn more</button>
-							</a>
+							<picture class="friend-card__img">
+								<source
+									srcset="
+										./images/pets/pets-jennifer.webp    1x,
+										./images/pets/pets-jennifer@2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767.98px)"
+								/>
+								<source
+									srcset="
+										./images/pets/pets-jennifer.jpg    1x,
+										./images/pets/pets-jennifer@2x.jpg 2x
+									"
+									type="image/jpeg"
+								/>
+								<img
+									src="./images/pets/pets-jennifer.jpg"
+									alt="puppy - Labrador"
+									width="270"
+									height="270"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="friend-card__title">Jennifer</h3>
+							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
 						<li class="friends-card__item">
-							<a href="javascript:void(0);" class="friend-card__link">
-								<picture class="friend-card__img">
-									<source
-										srcset="
-											./images/pets/pets-woody.webp    1x,
-											./images/pets/pets-woody@2x.webp 2x
-										"
-										type="image/webp"
-										media="(max-width: 767.98px)"
-									/>
-									<source
-										srcset="
-											./images/pets/pets-woody.jpg    1x,
-											./images/pets/pets-woody@2x.jpg 2x
-										"
-										type="image/jpeg"
-									/>
-									<img
-										src="./images/pets/pets-woody.jpg"
-										alt="Dog - Golden Retriever"
-										width="270"
-										height="270"
-										loading="lazy"
-									/>
-								</picture>
-								<h3 class="friend-card__title">Woody</h3>
-								<button class="btn friend-card--btn">Learn more</button>
-							</a>
+							<picture class="friend-card__img">
+								<source
+									srcset="
+										./images/pets/pets-woody.webp    1x,
+										./images/pets/pets-woody@2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767.98px)"
+								/>
+								<source
+									srcset="
+										./images/pets/pets-woody.jpg    1x,
+										./images/pets/pets-woody@2x.jpg 2x
+									"
+									type="image/jpeg"
+								/>
+								<img
+									src="./images/pets/pets-woody.jpg"
+									alt="Dog - Golden Retriever"
+									width="270"
+									height="270"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="friend-card__title">Woody</h3>
+							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
 						<li class="friends-card__item">
-							<a href="javascript:void(0);" class="friend-card__link">
-								<picture class="friend-card__img">
-									<source
-										srcset="
-											./images/pets/pets-sophia.webp    1x,
-											./images/pets/pets-sophia@2x.webp 2x
-										"
-										type="image/webp"
-										media="(max-width: 767.98px)"
-									/>
-									<source
-										srcset="
-											./images/pets/pets-sophia.jpg    1x,
-											./images/pets/pets-sophia@2x.jpg 2x
-										"
-										type="image/jpeg"
-									/>
-									<img
-										src="./images/pets/pets-sophia.jpg"
-										alt="puppy - Shih tzu"
-										width="270"
-										height="270"
-										loading="lazy"
-									/>
-								</picture>
-								<h3 class="friend-card__title">Sophia</h3>
-								<button class="btn friend-card--btn">Learn more</button>
-							</a>
+							<picture class="friend-card__img">
+								<source
+									srcset="
+										./images/pets/pets-sophia.webp    1x,
+										./images/pets/pets-sophia@2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767.98px)"
+								/>
+								<source
+									srcset="
+										./images/pets/pets-sophia.jpg    1x,
+										./images/pets/pets-sophia@2x.jpg 2x
+									"
+									type="image/jpeg"
+								/>
+								<img
+									src="./images/pets/pets-sophia.jpg"
+									alt="puppy - Shih tzu"
+									width="270"
+									height="270"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="friend-card__title">Sophia</h3>
+							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
 						<li class="friends-card__item">
-							<a href="javascript:void(0);" class="friend-card__link">
-								<picture class="friend-card__img">
-									<source
-										srcset="
-											./images/pets/pets-timmy.webp    1x,
-											./images/pets/pets-timmy@2x.webp 2x
-										"
-										type="image/webp"
-										media="(max-width: 767.98px)"
-									/>
-									<source
-										srcset="
-											./images/pets/pets-timmy.jpg    1x,
-											./images/pets/pets-timmy@2x.jpg 2x
-										"
-										type="image/jpeg"
-									/>
-									<img
-										src="./images/pets/pets-timmy.jpg"
-										alt="Cat - British Shorthair"
-										width="270"
-										height="270"
-										loading="lazy"
-									/>
-								</picture>
-								<h3 class="friend-card__title">Timmy</h3>
-								<button class="btn friend-card--btn">Learn more</button>
-							</a>
+							<picture class="friend-card__img">
+								<source
+									srcset="
+										./images/pets/pets-timmy.webp    1x,
+										./images/pets/pets-timmy@2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767.98px)"
+								/>
+								<source
+									srcset="
+										./images/pets/pets-timmy.jpg    1x,
+										./images/pets/pets-timmy@2x.jpg 2x
+									"
+									type="image/jpeg"
+								/>
+								<img
+									src="./images/pets/pets-timmy.jpg"
+									alt="Cat - British Shorthair"
+									width="270"
+									height="270"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="friend-card__title">Timmy</h3>
+							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
 						<li class="friends-card__item">
-							<a href="javascript:void(0);" class="friend-card__link">
-								<picture class="friend-card__img">
-									<source
-										srcset="
-											./images/pets/pets-charly.webp    1x,
-											./images/pets/pets-charly@2x.webp 2x
-										"
-										type="image/webp"
-										media="(max-width: 767.98px)"
-									/>
-									<source
-										srcset="
-											./images/pets/pets-charly.jpg    1x,
-											./images/pets/pets-charly@2x.jpg 2x
-										"
-										type="image/jpeg"
-									/>
-									<img
-										src="./images/pets/pets-charly.jpg"
-										alt="Dog - Jack Russell Terrier "
-										width="270"
-										height="270"
-										loading="lazy"
-									/>
-								</picture>
-								<h3 class="friend-card__title">Charly</h3>
-								<button class="btn friend-card--btn">Learn more</button>
-							</a>
+							<picture class="friend-card__img">
+								<source
+									srcset="
+										./images/pets/pets-charly.webp    1x,
+										./images/pets/pets-charly@2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767.98px)"
+								/>
+								<source
+									srcset="
+										./images/pets/pets-charly.jpg    1x,
+										./images/pets/pets-charly@2x.jpg 2x
+									"
+									type="image/jpeg"
+								/>
+								<img
+									src="./images/pets/pets-charly.jpg"
+									alt="Dog - Jack Russell Terrier "
+									width="270"
+									height="270"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="friend-card__title">Charly</h3>
+							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
 						<li class="friends-card__item">
-							<a href="javascript:void(0);" class="friend-card__link">
-								<picture class="friend-card__img">
-									<source
-										srcset="
-											./images/pets/pets-scarlet.webp    1x,
-											./images/pets/pets-scarlet@2x.webp 2x
-										"
-										type="image/webp"
-										media="(max-width: 767.98px)"
-									/>
-									<source
-										srcset="
-											./images/pets/pets-scarlet.jpg    1x,
-											./images/pets/pets-scarlet@2x.jpg 2x
-										"
-										type="image/jpeg"
-									/>
-									<img
-										src="./images/pets/pets-scarlet.jpg"
-										alt="puppy - Jack Russell Terrier"
-										width="270"
-										height="270"
-										loading="lazy"
-									/>
-								</picture>
-								<h3 class="friend-card__title">Scarlett</h3>
-								<button class="btn friend-card--btn">Learn more</button>
-							</a>
+							<picture class="friend-card__img">
+								<source
+									srcset="
+										./images/pets/pets-scarlet.webp    1x,
+										./images/pets/pets-scarlet@2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767.98px)"
+								/>
+								<source
+									srcset="
+										./images/pets/pets-scarlet.jpg    1x,
+										./images/pets/pets-scarlet@2x.jpg 2x
+									"
+									type="image/jpeg"
+								/>
+								<img
+									src="./images/pets/pets-scarlet.jpg"
+									alt="puppy - Jack Russell Terrier"
+									width="270"
+									height="270"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="friend-card__title">Scarlett</h3>
+							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
 						<li class="friends-card__item">
-							<a href="javascript:void(0);" class="friend-card__link">
-								<picture class="friend-card__img">
-									<source
-										srcset="
-											./images/pets/pets-freddie.webp    1x,
-											./images/pets/pets-freddie@2x.webp 2x
-										"
-										type="image/webp"
-										media="(max-width: 767.98px)"
-									/>
-									<source
-										srcset="
-											./images/pets/pets-freddie.jpg    1x,
-											./images/pets/pets-freddie@2x.jpg 2x
-										"
-										type="image/jpeg"
-									/>
-									<img
-										src="./images/pets/pets-freddie.jpg"
-										alt="Cat - British Shorthair"
-										width="270"
-										height="270"
-										loading="lazy"
-									/>
-								</picture>
-								<h3 class="friend-card__title">Freddie</h3>
-								<button class="btn friend-card--btn">Learn more</button>
-							</a>
+							<picture class="friend-card__img">
+								<source
+									srcset="
+										./images/pets/pets-freddie.webp    1x,
+										./images/pets/pets-freddie@2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767.98px)"
+								/>
+								<source
+									srcset="
+										./images/pets/pets-freddie.jpg    1x,
+										./images/pets/pets-freddie@2x.jpg 2x
+									"
+									type="image/jpeg"
+								/>
+								<img
+									src="./images/pets/pets-freddie.jpg"
+									alt="Cat - British Shorthair"
+									width="270"
+									height="270"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="friend-card__title">Freddie</h3>
+							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 					</ul>
 
@@ -427,7 +413,7 @@
 			</section>
 		</main>
 
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="container footer--container">
 				<div class="footer__wrap">
 					<h2 class="footer-contact__title">For questions and suggestions</h2>
