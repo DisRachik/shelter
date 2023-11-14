@@ -1,11 +1,5 @@
 // Parameters for the font
-@mixin font(
-	$size: none,
-	$font: (
-		'Arial',
-		sans-serif,
-	)
-) {
+@mixin font($size, $font: ('Arial', sans-serif)) {
 	font-family: $font;
 	font-size: $size;
 }

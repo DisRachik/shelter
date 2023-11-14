@@ -124,14 +124,78 @@
 		<main>
 			<!-- Not only -->
 			<section class="hero">
-				<div class="container">
-					<h2 class="hero__title">Not only people need a house</h2>
-					<p class="hero-text">
-						We offer to give a chance to a little and nice puppy with an
-						extremely wide and open heart. He or she will love you more than
-						anybody else in the world, you will see!
-					</p>
-					<a href="#friend" class="btn hero--btn">Make a friend</a>
+				<div class="container container--hero">
+					<div class="hero__wrap">
+						<h2 class="hero__title">Not only people need a house</h2>
+						<p class="hero-text">
+							We offer to give a chance to a little and nice puppy with an
+							extremely wide and open heart. He or she will love you more than
+							anybody else in the world, you will see!
+						</p>
+						<a href="#friend" class="btn btn--accent btn--hero">
+							Make a friend
+						</a>
+					</div>
+
+					<picture class="hero__img">
+						<source
+							srcset="
+								./images/hero/puppy-mb.webp    1x,
+								./images/hero/puppy-mb@2x.webp 2x
+							"
+							type="image/webp"
+							media="(max-width: 767.98px)"
+						/>
+						<source
+							srcset="
+								./images/hero/puppy-mb.png    1x,
+								./images/hero/puppy-mb@2x.png 2x
+							"
+							type="image/png"
+							media="(max-width: 767.98px)"
+						/>
+
+						<source
+							srcset="
+								./images/hero/puppy-tb.webp    1x,
+								./images/hero/puppy-tb@2x.webp 2x
+							"
+							type="image/webp"
+							media="(max-width: 1199.98px)"
+						/>
+						<source
+							srcset="
+								./images/hero/puppy-tb.png    1x,
+								./images/hero/puppy-tb@2x.png 2x
+							"
+							type="image/png"
+							media="(max-width: 1199.98px)"
+						/>
+
+						<source
+							srcset="
+								./images/hero/puppy-dt.webp    1x,
+								./images/hero/puppy-dt@2x.webp 2x
+							"
+							type="image/webp"
+							media="(min-width: 1200px)"
+						/>
+						<source
+							srcset="
+								./images/hero/puppy-dt.png    1x,
+								./images/hero/puppy-dt@2x.png 2x
+							"
+							type="image/png"
+							media="(min-width: 1200px)"
+						/>
+						<img
+							src="./images/hero/puppy-dt.png"
+							alt="cat and dog"
+							width="698"
+							height="728"
+							loading="lazy"
+						/>
+					</picture>
 				</div>
 			</section>
 
@@ -179,7 +243,7 @@
 								./images/about/pets-dt@2x.webp 2x
 							"
 							type="image/webp"
-							media="(max-width: 767.98px)"
+							media="(min-width: 768px)"
 						/>
 						<source
 							srcset="
@@ -605,7 +669,7 @@
 				</div>
 			</section>
 
-			<!-- In addition -->
+			<!-- In addition (donation)-->
 			<section class="section">
 				<div class="container">
 					<div class="donation">
@@ -657,7 +721,7 @@
 									./images/donation/dog-dt@2x.webp 2x
 								"
 								type="image/webp"
-								media="(max-width: 767.98px)"
+								media="(min-width: 768px)"
 							/>
 							<source
 								srcset="

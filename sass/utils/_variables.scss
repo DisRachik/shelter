@@ -10,6 +10,8 @@ $colors: (
 
 	'dark': #000000,
 
+	'hover': #fddcc4,
+
 	'bg-secondary': #f6f6f6,
 );
 @function getColor($key) {
