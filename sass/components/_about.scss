@@ -1,0 +1,19 @@
+.container--about {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+	gap: 120px;
+}
+
+.about__wrap {
+	flex-basis: 35.8%;
+}
+.about__text {
+	margin-top: 25px;
+
+	@include font(15px);
+	line-height: 1.6;
+
+	color: getColor('text-secondary');
+}
