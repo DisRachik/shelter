@@ -13,6 +13,7 @@ $colors: (
 	'hover': #fddcc4,
 
 	'bg-secondary': #f6f6f6,
+	'bg-card': #fafafa,
 );
 @function getColor($key) {
 	@return map-get($colors, $key);

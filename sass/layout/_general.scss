@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+	position: relative;
 	outline: 1px solid tomato;
 
 	margin: 0 auto;
@@ -29,6 +30,10 @@ body {
 
 	&:nth-child(odd) {
 		background-color: getColor('bg-secondary');
+	}
+
+	&--center {
+		text-align: center;
 	}
 }
 .section__title {
