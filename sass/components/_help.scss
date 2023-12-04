@@ -1,0 +1,43 @@
+.help {
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 120px;
+	row-gap: 55px;
+}
+
+.help__link {
+	height: 113px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	&:hover > .help__icon,
+	&:focus > .help__icon {
+		filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+		fill: getColor('dark');
+		transform: scale(1.2);
+	}
+	&:hover > .help__icon-name,
+	&:focus > .help__icon-name {
+		color: getColor('hover');
+		border-bottom: 4px solid getColor('hover');
+	}
+}
+
+.help__icon {
+	fill: getColor('accent');
+
+	@include animated(filter, fill, transform);
+}
+
+.help__icon-name {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.15;
+	letter-spacing: 0.06em;
+
+	@include animated(color, border-bottom);
+}
