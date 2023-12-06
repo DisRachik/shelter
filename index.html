@@ -691,7 +691,7 @@
 						<p class="donation__subtitle">
 							Name of the bank &#47; Type of bank account
 						</p>
-						<a href="#" class="donation__wrap-card">
+						<a href="#" class="donation__link">
 							<svg
 								class="donation__icon"
 								width="30"
@@ -759,13 +759,14 @@
 		<!-- footer -->
 		<footer class="footer" id="footer">
 			<div class="container footer--container">
-				<div class="footer__wrap">
-					<h2 class="footer-contact__title">For questions and suggestions</h2>
-					<ul class="footer-contact__items">
-						<li class="footer-contact__item">
-							<a href="mailto:email@shelter.com" class="footer-contact__link">
+				<!-- Contact -->
+				<address class="footer__address">
+					<p class="footer__title">For questions and suggestions</p>
+					<ul class="footer__items">
+						<li class="footer__item">
+							<a href="mailto:email@shelter.com" class="footer__link">
 								<svg
-									class="footer-contact__icon"
+									class="footer__icon"
 									width="40"
 									height="26"
 									aria-label="the envelope icon"
@@ -775,10 +776,11 @@
 								email@shelter.com
 							</a>
 						</li>
-						<li class="footer-contact__item">
-							<a href="tel:+136745677554" class="footer-contact__link">
+
+						<li class="footer__item">
+							<a href="tel:+136745677554" class="footer__link">
 								<svg
-									class="footer-contact__icon"
+									class="footer__icon"
 									width="40"
 									height="32"
 									aria-label="the telephone icon"
@@ -789,50 +791,95 @@
 							</a>
 						</li>
 					</ul>
-				</div>
+				</address>
 
 				<!-- Address -->
-				<address class="footer__wrap address">
-					<p class="footer-contact__title">We are waiting for your visit</p>
-					<ul class="address__items">
-						<li class="address__item">
+				<address class="footer__address">
+					<p class="footer__title">We are waiting for your visit</p>
+					<ul class="footer__items">
+						<li class="footer__item footer__item--first">
 							<a
 								href="https://goo.gl/maps/5DXhjs2AEDyqbeJr9"
-								class="address__link"
+								class="footer__link"
 								target="_blank"
 								rel="noopener  nofollow  noreferrer"
 							>
 								<svg
-									class="address__icon"
+									class="footer__icon"
 									width="22"
 									height="32"
 									aria-label="geolocation marker"
 								>
-									<use href="./icons/icon-defs.svg#marker"></use>
+									<use href="./icons/icon-defs.svg#icon-marker"></use>
 								</svg>
-								1 Central Street, Boston (entrance from the store)
+								<span>1 Central Street, Boston (entrance from the store)</span>
 							</a>
 						</li>
-						<li class="address__item">
+
+						<li class="footer__item footer__item--second">
 							<a
 								href="https://goo.gl/maps/M5dqgfdDYDNYwrUB8"
-								class="address__link"
+								class="footer__link"
 								target="_blank"
 								rel="noopener  nofollow  noreferrer"
 							>
 								<svg
-									class="address__icon"
+									class="footer__icon"
 									width="22"
 									height="32"
 									aria-label="geolocation marker"
 								>
-									<use href="./icons/icon-defs.svg#marker"></use>
+									<use href="./icons/icon-defs.svg#icon-marker"></use>
 								</svg>
 								18 South Park, London
 							</a>
 						</li>
 					</ul>
 				</address>
+
+				<!-- Img -->
+				<picture class="footer__img">
+					<source
+						srcset="
+							./images/footer/puppy-mb.webp    1x,
+							./images/footer/puppy-mb@2x.webp 2x
+						"
+						type="image/webp"
+						media="(max-width: 767.98px)"
+					/>
+					<source
+						srcset="
+							./images/footer/puppy-mb.png    1x,
+							./images/footer/puppy-mb@2x.png 2x
+						"
+						type="image/png"
+						media="(max-width: 767.98px)"
+					/>
+
+					<source
+						srcset="
+							./images/footer/puppy-dt.webp    1x,
+							./images/footer/puppy-dt@2x.webp 2x
+						"
+						type="image/webp"
+						media="(min-width: 768px)"
+					/>
+					<source
+						srcset="
+							./images/footer/puppy-dt.png    1x,
+							./images/footer/puppy-dt@2x.png 2x
+						"
+						type="image/png"
+						media="(min-width: 768px)"
+					/>
+					<img
+						src="./images/footer/puppy-dt.png"
+						alt="cat and dog"
+						width="300"
+						height="310"
+						loading="lazy"
+					/>
+				</picture>
 			</div>
 		</footer>
 	</body>
