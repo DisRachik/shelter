@@ -84,7 +84,7 @@
 		<meta name="theme-color" content="#ffffff" />
 
 		<!-- Title page -->
-		<title>Shelter pets</title>
+		<title>Shelter</title>
 
 		<!-- connecting styles -->
 		<link rel="stylesheet" href="./css/main.min.css" />
@@ -92,7 +92,7 @@
 
 	<body>
 		<!-- Header -->
-		<header class="header header--pets">
+		<header class="header">
 			<div class="container header--container">
 				<!-- Logo -->
 				<h1 class="logo">
@@ -106,15 +106,15 @@
 				<nav class="nav">
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a href="./index.html" class="nav__link">About the shelter</a>
-						</li>
-						<li class="nav__item">
 							<a href="javascript:void(0);" class="nav__link nav__link--active">
-								Our pets
+								About the shelter
 							</a>
 						</li>
 						<li class="nav__item">
-							<a href="./index.html#help" class="nav__link">Help the shelter</a>
+							<a href="./pets.html" class="nav__link">Our pets</a>
+						</li>
+						<li class="nav__item">
+							<a href="#help" class="nav__link">Help the shelter</a>
 						</li>
 						<li class="nav__item">
 							<a href="#footer" class="nav__link">Contacts</a>
@@ -126,8 +126,156 @@
 
 		<!-- Main -->
 		<main>
+			<!-- Not only (hero) -->
+			<section class="hero">
+				<div class="container container--hero">
+					<div class="hero__wrap">
+						<h2 class="hero__title">Not only people need a house</h2>
+						<p class="hero-text">
+							We offer to give a chance to a little and nice puppy with an
+							extremely wide and open heart. He or she will love you more than
+							anybody else in the world, you will see!
+						</p>
+						<a href="#friend" class="btn btn--accent btn--hero">
+							Make a friend
+						</a>
+					</div>
+
+					<picture class="hero__img">
+						<source
+							srcset="
+								./images/hero/puppy-mb.webp    1x,
+								./images/hero/puppy-mb@2x.webp 2x
+							"
+							type="image/webp"
+							media="(max-width: 767.98px)"
+						/>
+						<source
+							srcset="
+								./images/hero/puppy-mb.png    1x,
+								./images/hero/puppy-mb@2x.png 2x
+							"
+							type="image/png"
+							media="(max-width: 767.98px)"
+						/>
+
+						<source
+							srcset="
+								./images/hero/puppy-tb.webp    1x,
+								./images/hero/puppy-tb@2x.webp 2x
+							"
+							type="image/webp"
+							media="(max-width: 1199.98px)"
+						/>
+						<source
+							srcset="
+								./images/hero/puppy-tb.png    1x,
+								./images/hero/puppy-tb@2x.png 2x
+							"
+							type="image/png"
+							media="(max-width: 1199.98px)"
+						/>
+
+						<source
+							srcset="
+								./images/hero/puppy-dt.webp    1x,
+								./images/hero/puppy-dt@2x.webp 2x
+							"
+							type="image/webp"
+							media="(min-width: 1200px)"
+						/>
+						<source
+							srcset="
+								./images/hero/puppy-dt.png    1x,
+								./images/hero/puppy-dt@2x.png 2x
+							"
+							type="image/png"
+							media="(min-width: 1200px)"
+						/>
+						<img
+							src="./images/hero/puppy-dt.png"
+							alt="cat and dog"
+							width="698"
+							height="728"
+							loading="lazy"
+						/>
+					</picture>
+				</div>
+			</section>
+
+			<!-- About -->
+			<section class="section">
+				<div class="container container--about">
+					<!-- About content -->
+					<div class="about__wrap">
+						<h2 class="section__title">
+							About the shelter
+							<br />
+							“Cozy House”
+						</h2>
+						<p class="about__text">
+							Currently we have 121 dogs and 342 cats on our hands and
+							statistics show that only 20% of them will find a family. The
+							others will continue to live with us and will be waiting for a
+							lucky chance to become dearly loved.
+						</p>
+						<p class="about__text">
+							We feed our wards with the best food and make sure that they do
+							not get sick, feel comfortable (including psychologically) and
+							well. We are supported by 87 volunteers and 28 employees of
+							various skill levels. About 12% of the animals are taken by the
+							shelter staff. Taking care of the animals, they become attached to
+							the pets and would hardly ever leave them alone.
+						</p>
+					</div>
+
+					<picture class="about__img">
+						<source
+							srcset="
+								./images/about/pets-mb.webp    1x,
+								./images/about/pets-mb@2x.webp 2x
+							"
+							type="image/webp"
+							media="(max-width: 767.98px)"
+						/>
+						<source
+							srcset="
+								./images/about/pets-mb.png    1x,
+								./images/about/pets-mb@2x.png 2x
+							"
+							type="image/png"
+							media="(max-width: 767.98px)"
+						/>
+
+						<source
+							srcset="
+								./images/about/pets-dt.webp    1x,
+								./images/about/pets-dt@2x.webp 2x
+							"
+							type="image/webp"
+							media="(min-width: 768px)"
+						/>
+						<source
+							srcset="
+								./images/about/pets-dt.png    1x,
+								./images/about/pets-dt@2x.png 2x
+							"
+							type="image/png"
+							media="(min-width: 768px)"
+						/>
+						<img
+							src="./images/about/pets-dt.png"
+							alt="cat and dog"
+							width="300"
+							height="408"
+							loading="lazy"
+						/>
+					</picture>
+				</div>
+			</section>
+
 			<!-- Our Friends -->
-			<section class="section section--center">
+			<section class="section section--center" id="friend">
 				<div class="container">
 					<h2 class="section__title">
 						Our friends who
@@ -136,8 +284,8 @@
 					</h2>
 
 					<!-- Pets cards -->
-					<ul class="friends-card">
-						<li class="friends-card__item">
+					<ul class="friends-card friends-card--main">
+						<li class="friends-card__item friends-card__item--main">
 							<picture class="friend-card__img">
 								<source
 									srcset="
@@ -165,7 +313,7 @@
 							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
-						<li class="friends-card__item">
+						<li class="friends-card__item friends-card__item--main">
 							<picture class="friend-card__img">
 								<source
 									srcset="
@@ -193,7 +341,7 @@
 							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
-						<li class="friends-card__item">
+						<li class="friends-card__item friends-card__item--main">
 							<picture class="friend-card__img">
 								<source
 									srcset="
@@ -221,7 +369,7 @@
 							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
-						<li class="friends-card__item">
+						<li class="friends-card__item friends-card__item--main">
 							<picture class="friend-card__img">
 								<source
 									srcset="
@@ -249,7 +397,7 @@
 							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
-						<li class="friends-card__item">
+						<li class="friends-card__item friends-card__item--main">
 							<picture class="friend-card__img">
 								<source
 									srcset="
@@ -277,7 +425,7 @@
 							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
-						<li class="friends-card__item">
+						<li class="friends-card__item friends-card__item--main">
 							<picture class="friend-card__img">
 								<source
 									srcset="
@@ -305,7 +453,7 @@
 							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
-						<li class="friends-card__item">
+						<li class="friends-card__item friends-card__item--main">
 							<picture class="friend-card__img">
 								<source
 									srcset="
@@ -333,7 +481,7 @@
 							<button class="btn friend-card--btn">Learn more</button>
 						</li>
 
-						<li class="friends-card__item">
+						<li class="friends-card__item friends-card__item--main">
 							<picture class="friend-card__img">
 								<source
 									srcset="
@@ -363,52 +511,249 @@
 					</ul>
 
 					<!-- dots for navigation -->
-					<ul class="dots">
-						<li class="dots__dot dots__dot--inactive">
+					<ul class="dots dots--main">
+						<li class="dots__dot dots__dot--left">
 							<svg
 								class="dots__svg"
-								width="27"
-								height="23"
-								aria-label="double left side of a pets"
-							>
-								<use href="./icons/icon-defs.svg#pets-double-left"></use>
-							</svg>
-						</li>
-
-						<li class="dots__dot dots__dot--inactive">
-							<svg
-								class="dots__svg"
-								width="13"
-								height="23"
+								width="14"
+								height="6"
 								aria-label="left side of a pets"
 							>
-								<use href="./icons/icon-defs.svg#pets-left"></use>
+								<use href="./icons/icon-defs.svg#left"></use>
 							</svg>
 						</li>
-						<li class="dots__dot dots__dot--number dots__dot--active">1</li>
-
-						<li class="dots__dot">
+						<li class="dots__dot dots__dot--right">
 							<svg
 								class="dots__svg"
-								width="13"
-								height="23"
+								width="14"
+								height="6"
 								aria-label="right side of a pets"
 							>
-								<use href="./icons/icon-defs.svg#pets-right"></use>
-							</svg>
-						</li>
-
-						<li class="dots__dot">
-							<svg
-								class="dots__svg"
-								width="27"
-								height="23"
-								aria-label="double right side of a pets"
-							>
-								<use href="./icons/icon-defs.svg#pets-double-right"></use>
+								<use href="./icons/icon-defs.svg#right"></use>
 							</svg>
 						</li>
 					</ul>
+
+					<a href="./pets.html" class="btn btn--accent btn--friends">
+						Get to know the rest
+					</a>
+				</div>
+			</section>
+
+			<!-- Help -->
+			<section class="section section--center" id="help">
+				<div class="container">
+					<h2 class="section__title">
+						How you can help
+						<br />
+						our shelter
+					</h2>
+
+					<!-- Icons for section "helps" -->
+					<ul class="help">
+						<li class="help__item">
+							<a href="javascript:void(0);" class="help__link">
+								<svg
+									class="help__icon"
+									width="60"
+									height="60"
+									aria-label="food bottle for our pets"
+								>
+									<use href="./icons/icon-defs.svg#icon-pet-food"></use>
+								</svg>
+								<h3 class="help__icon-name">Pet food</h3>
+							</a>
+						</li>
+
+						<li class="help__item">
+							<a href="javascript:void(0);" class="help__link">
+								<svg
+									class="help__icon"
+									width="60"
+									height="60"
+									aria-label="Transportation our pets"
+								>
+									<use href="./icons/icon-defs.svg#icon-transportation"></use>
+								</svg>
+								<h3 class="help__icon-name">Transportation</h3>
+							</a>
+						</li>
+
+						<li class="help__item">
+							<a href="javascript:void(0);" class="help__link">
+								<svg
+									class="help__icon"
+									width="60"
+									height="60"
+									aria-label="a tennis balls"
+								>
+									<use href="./icons/icon-defs.svg#icon-toys"></use>
+								</svg>
+								<h3 class="help__icon-name">Toys</h3>
+							</a>
+						</li>
+
+						<li class="help__item">
+							<a href="javascript:void(0);" class="help__link">
+								<svg
+									class="help__icon"
+									width="60"
+									height="60"
+									aria-label="Bowls and cups for our pets"
+								>
+									<use href="./icons/icon-defs.svg#icon-bowls-and-cups"></use>
+								</svg>
+								<h3 class="help__icon-name">Bowls and cups</h3>
+							</a>
+						</li>
+
+						<li class="help__item">
+							<a href="javascript:void(0);" class="help__link">
+								<svg
+									class="help__icon"
+									width="60"
+									height="60"
+									aria-label="Shampoos bottle"
+								>
+									<use href="./icons/icon-defs.svg#icon-shampoos"></use>
+								</svg>
+								<h3 class="help__icon-name">Shampoos</h3>
+							</a>
+						</li>
+
+						<li class="help__item">
+							<a href="javascript:void(0);" class="help__link">
+								<svg
+									class="help__icon"
+									width="60"
+									height="60"
+									aria-label="Vitamins for pets"
+								>
+									<use href="./icons/icon-defs.svg#icon-vitamins"></use>
+								</svg>
+								<h3 class="help__icon-name">Vitamins</h3>
+							</a>
+						</li>
+
+						<li class="help__item">
+							<a href="javascript:void(0);" class="help__link">
+								<svg
+									class="help__icon"
+									width="60"
+									height="60"
+									aria-label="the syringe"
+								>
+									<use href="./icons/icon-defs.svg#icon-medicines"></use>
+								</svg>
+								<h3 class="help__icon-name">Medicines</h3>
+							</a>
+						</li>
+
+						<li class="help__item">
+							<a href="javascript:void(0);" class="help__link">
+								<svg
+									class="help__icon"
+									width="60"
+									height="60"
+									aria-label="the collars"
+								>
+									<use href="./icons/icon-defs.svg#icon-collars-leashes"></use>
+								</svg>
+								<h3 class="help__icon-name">Collars / leashes</h3>
+							</a>
+						</li>
+
+						<li class="help__item">
+							<a href="javascript:void(0);" class="help__link">
+								<svg
+									class="help__icon"
+									width="60"
+									height="60"
+									aria-label="a house for a pet"
+								>
+									<use href="./icons/icon-defs.svg#icon-sleeping-area"></use>
+								</svg>
+								<h3 class="help__icon-name">Sleeping areas</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- In addition (donation)-->
+			<section class="section">
+				<div class="container container--donation">
+					<!-- In addition content (donation content) -->
+					<div class="donation__inner">
+						<h2 class="section__title">
+							You can also
+							<br />
+							make a donation
+						</h2>
+						<p class="donation__subtitle">
+							Name of the bank &#47; Type of bank account
+						</p>
+						<a href="#" class="donation__link">
+							<svg
+								class="donation__icon"
+								width="30"
+								height="23"
+								aria-label="icon credit-card"
+							>
+								<use href="./icons/icon-defs.svg#credit-card"></use>
+							</svg>
+							8380 2880 8028 8791 7435
+						</a>
+						<p class="donation__text">
+							Legal information and lorem ipsum dolor sit amet, consectetur
+							adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+							ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+							et malesuada fames ac ante ipsum primis in faucibus.
+						</p>
+					</div>
+
+					<picture class="about__img">
+						<source
+							srcset="
+								./images/donation/dog-mb.webp    1x,
+								./images/donation/dog-mb@2x.webp 2x
+							"
+							type="image/webp"
+							media="(max-width: 767.98px)"
+						/>
+						<source
+							srcset="
+								./images/donation/dog-mb.png    1x,
+								./images/donation/dog-mb@2x.png 2x
+							"
+							type="image/png"
+							media="(max-width: 767.98px)"
+						/>
+
+						<source
+							srcset="
+								./images/donation/dog-dt.webp    1x,
+								./images/donation/dog-dt@2x.webp 2x
+							"
+							type="image/webp"
+							media="(min-width: 768px)"
+						/>
+						<source
+							srcset="
+								./images/donation/dog-dt.png    1x,
+								./images/donation/dog-dt@2x.png 2x
+							"
+							type="image/png"
+							media="(min-width: 768px)"
+						/>
+						<img
+							src="./images/donation/dog-dt.png"
+							alt="cat and dog"
+							width="505"
+							height="261"
+							loading="lazy"
+						/>
+					</picture>
 				</div>
 			</section>
 		</main>

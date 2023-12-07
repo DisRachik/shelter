@@ -6,4 +6,12 @@
 @import './base/base';
 
 // Components
-@import './components/general';
+@import './layout/general';
+@import './layout/header';
+@import './layout/btn';
+@import './layout/footer';
+@import './components/hero';
+@import './components/about';
+@import './components/friends';
+@import './components/help';
+@import './components/donation';
