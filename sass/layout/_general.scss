@@ -1,5 +1,4 @@
 body {
-	position: relative;
 	font-family: 'Georgia', serif;
 	font-size: 15px;
 	line-height: 1.1;
@@ -7,13 +6,10 @@ body {
 	color: getColor('text-prime');
 
 	background-color: getColor('light');
-
-	scroll-behavior: smooth;
 }
 
 .container {
 	position: relative;
-	outline: 1px solid tomato;
 
 	margin: 0 auto;
 	padding-right: 40px;
@@ -23,8 +19,6 @@ body {
 }
 
 .section {
-	outline: 1px solid greenyellow;
-
 	padding-top: 80px;
 	padding-bottom: 100px;
 

@@ -1,6 +1,6 @@
 .btn {
 	display: inline-block;
-	padding: 15px 45px;
+	padding: 13px 43px;
 
 	font-size: 17px;
 	line-height: 1.3;
@@ -11,7 +11,7 @@
 	border: 2px solid getColor('accent');
 	border-radius: 100px;
 
-	@include animated(background-color);
+	@include animated(background-color, border-color, box-shadow);
 
 	&--accent {
 		background-color: getColor('accent');
@@ -20,5 +20,66 @@
 	&:hover,
 	&:focus {
 		background-color: getColor('hover');
+		border-color: transparent;
+		box-shadow: 3px 3px 20px getColor('hover');
+	}
+}
+
+// Dots for Slider
+.dots {
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+
+	&--main {
+		margin-top: 0;
+	}
+}
+.dots__dot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 52px;
+	height: 52px;
+
+	color: getColor('text-btn');
+
+	border: 2px solid getColor('accent');
+	border-radius: 100px;
+	cursor: pointer;
+
+	@include animated(background-color, border-color, box-shadow);
+
+	&:hover,
+	&:focus {
+		background-color: getColor('hover');
+		border-color: transparent;
+		box-shadow: 3px 3px 20px getColor('hover');
+	}
+
+	&--active {
+		background-color: getColor('accent');
+		border-color: transparent;
+	}
+	&--inactive {
+		border-color: getColor('light-secondary');
+
+		& .dots__svg {
+			fill: getColor('light-secondary');
+		}
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+			border-color: getColor('light-secondary');
+			box-shadow: none;
+		}
+	}
+
+	&--number {
+		font-size: 20px;
+		line-height: 1.5;
+		letter-spacing: 0.06em;
 	}
 }

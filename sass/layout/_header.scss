@@ -24,6 +24,7 @@
 	@include font(13px);
 	line-height: 1.15;
 	letter-spacing: 0.1em;
+	text-align: right;
 
 	color: getColor('light');
 }
@@ -43,7 +44,7 @@
 }
 .nav__link {
 	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-bottom: 4px;
 
 	@include animated(color);
 
@@ -55,5 +56,23 @@
 	&:hover,
 	&:focus {
 		color: getColor('light');
+	}
+}
+
+// The header for page pets
+.header--pets {
+	& .logo {
+		color: getColor('text-prime');
+	}
+	& .nav,
+	& .logo__subtitle {
+		color: inherit;
+	}
+	& .nav__link--active {
+		color: getColor('text-btn');
+	}
+	& .nav__link:hover,
+	& .nav__link:focus {
+		color: getColor('text-btn');
 	}
 }

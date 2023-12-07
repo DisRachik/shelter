@@ -1,12 +1,24 @@
 .friends-card {
+	&--main {
+		gap: 90px;
+	}
+
 	margin-top: 60px;
 
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	gap: 90px;
+	column-gap: 40px;
+	row-gap: 30px;
 }
 
 .friends-card__item {
+	&--main {
+		&:nth-child(n + 4) {
+			display: none;
+		}
+	}
+
 	padding-bottom: 30px;
 
 	display: flex;
@@ -22,26 +34,36 @@
 		pointer;
 	@include animated(box-shadow, transform);
 
-	&:nth-child(n + 4) {
-		display: none;
-	}
-
 	&:hover {
 		box-shadow: 3px 3px 20px getColor('accent');
 		transform: scale(1.1);
+
+		& > .btn {
+			background-color: getColor('hover');
+			border-color: transparent;
+		}
 	}
+}
+
+.friend-card__title {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.15;
+
+	letter-spacing: 0.06em;
 }
 
 // dots
 .dots__dot--left,
 .dots__dot--right {
 	position: absolute;
-	top: 50%;
-	transform: translateY(50%);
+	top: 49%;
+	left: 40px;
 }
 .dots__dot--right {
-	right: 40px;
-	transform: translate(100% 50%);
+	left: calc(100% - 40px);
+	transform: translateX(-100%);
 }
 
 .btn--friends {

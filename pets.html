@@ -94,12 +94,15 @@
 		<!-- Header -->
 		<header class="header header--pets">
 			<div class="container header--container">
+				<!-- Logo -->
 				<h1 class="logo">
 					<a href="./index.html" class="logo__title">
 						Cozy House
 						<span class="logo__subtitle">Shelter for pets in Boston</span>
 					</a>
 				</h1>
+
+				<!-- Navigation -->
 				<nav class="nav">
 					<ul class="nav__list">
 						<li class="nav__item">
@@ -121,14 +124,18 @@
 			</div>
 		</header>
 
+		<!-- Main -->
 		<main>
 			<!-- Our Friends -->
-			<section class="section section--friend">
+			<section class="section section--center">
 				<div class="container">
 					<h2 class="section__title">
-						Our friends who are looking for a house
+						Our friends who
+						<br />
+						are looking for a house
 					</h2>
 
+					<!-- Pets cards -->
 					<ul class="friends-card">
 						<li class="friends-card__item">
 							<picture class="friend-card__img">
@@ -138,7 +145,6 @@
 										./images/pets/pets-katrine@2x.webp 2x
 									"
 									type="image/webp"
-									media="(max-width: 767.98px)"
 								/>
 								<source
 									srcset="
@@ -167,7 +173,6 @@
 										./images/pets/pets-jennifer@2x.webp 2x
 									"
 									type="image/webp"
-									media="(max-width: 767.98px)"
 								/>
 								<source
 									srcset="
@@ -196,7 +201,6 @@
 										./images/pets/pets-woody@2x.webp 2x
 									"
 									type="image/webp"
-									media="(max-width: 767.98px)"
 								/>
 								<source
 									srcset="
@@ -225,7 +229,6 @@
 										./images/pets/pets-sophia@2x.webp 2x
 									"
 									type="image/webp"
-									media="(max-width: 767.98px)"
 								/>
 								<source
 									srcset="
@@ -254,7 +257,6 @@
 										./images/pets/pets-timmy@2x.webp 2x
 									"
 									type="image/webp"
-									media="(max-width: 767.98px)"
 								/>
 								<source
 									srcset="
@@ -283,7 +285,6 @@
 										./images/pets/pets-charly@2x.webp 2x
 									"
 									type="image/webp"
-									media="(max-width: 767.98px)"
 								/>
 								<source
 									srcset="
@@ -312,7 +313,6 @@
 										./images/pets/pets-scarlet@2x.webp 2x
 									"
 									type="image/webp"
-									media="(max-width: 767.98px)"
 								/>
 								<source
 									srcset="
@@ -341,7 +341,6 @@
 										./images/pets/pets-freddie@2x.webp 2x
 									"
 									type="image/webp"
-									media="(max-width: 767.98px)"
 								/>
 								<source
 									srcset="
@@ -363,8 +362,9 @@
 						</li>
 					</ul>
 
+					<!-- dots for navigation -->
 					<ul class="dots">
-						<li class="dots__dot">
+						<li class="dots__dot dots__dot--inactive">
 							<svg
 								class="dots__svg"
 								width="27"
@@ -375,7 +375,7 @@
 							</svg>
 						</li>
 
-						<li class="dots__dot">
+						<li class="dots__dot dots__dot--inactive">
 							<svg
 								class="dots__svg"
 								width="13"
@@ -385,7 +385,7 @@
 								<use href="./icons/icon-defs.svg#pets-left"></use>
 							</svg>
 						</li>
-						<li class="dots__dot">1</li>
+						<li class="dots__dot dots__dot--number dots__dot--active">1</li>
 
 						<li class="dots__dot">
 							<svg
@@ -413,17 +413,19 @@
 			</section>
 		</main>
 
+		<!-- footer -->
 		<footer class="footer" id="footer">
 			<div class="container footer--container">
-				<div class="footer__wrap">
-					<h2 class="footer-contact__title">For questions and suggestions</h2>
-					<ul class="footer-contact__items">
-						<li class="footer-contact__item">
-							<a href="mailto:email@shelter.com" class="footer-contact__link">
+				<!-- Contact -->
+				<address class="footer__address">
+					<p class="footer__title">For questions and suggestions</p>
+					<ul class="footer__items">
+						<li class="footer__item">
+							<a href="mailto:email@shelter.com" class="footer__link">
 								<svg
-									class="footer-contact__icon"
+									class="footer__icon"
 									width="40"
-									height="26"
+									height="32"
 									aria-label="the envelope icon"
 								>
 									<use href="./icons/icon-defs.svg#icon-email"></use>
@@ -431,10 +433,11 @@
 								email@shelter.com
 							</a>
 						</li>
-						<li class="footer-contact__item">
-							<a href="tel:+136745677554" class="footer-contact__link">
+
+						<li class="footer__item">
+							<a href="tel:+136745677554" class="footer__link">
 								<svg
-									class="footer-contact__icon"
+									class="footer__icon"
 									width="40"
 									height="32"
 									aria-label="the telephone icon"
@@ -445,51 +448,98 @@
 							</a>
 						</li>
 					</ul>
-				</div>
+				</address>
 
 				<!-- Address -->
-				<address class="footer__wrap address">
-					<p class="footer-contact__title">We are waiting for your visit</p>
-					<ul class="address__items">
-						<li class="address__item">
+				<address class="footer__address">
+					<p class="footer__title">We are waiting for your visit</p>
+					<ul class="footer__items">
+						<li class="footer__item footer__item--adrr">
 							<a
 								href="https://goo.gl/maps/5DXhjs2AEDyqbeJr9"
-								class="address__link"
+								class="footer__link"
 								target="_blank"
 								rel="noopener  nofollow  noreferrer"
 							>
 								<svg
-									class="address__icon"
+									class="footer__icon"
 									width="22"
 									height="32"
 									aria-label="geolocation marker"
 								>
-									<use href="./icons/icon-defs.svg#marker"></use>
+									<use href="./icons/icon-defs.svg#icon-marker"></use>
 								</svg>
-								1 Central Street, Boston (entrance from the store)
+								<span>1 Central Street, Boston (entrance from the store)</span>
 							</a>
 						</li>
-						<li class="address__item">
+
+						<li class="footer__item footer__item--adrr">
 							<a
 								href="https://goo.gl/maps/M5dqgfdDYDNYwrUB8"
-								class="address__link"
+								class="footer__link"
 								target="_blank"
 								rel="noopener  nofollow  noreferrer"
 							>
 								<svg
-									class="address__icon"
+									class="footer__icon"
 									width="22"
 									height="32"
 									aria-label="geolocation marker"
 								>
-									<use href="./icons/icon-defs.svg#marker"></use>
+									<use href="./icons/icon-defs.svg#icon-marker"></use>
 								</svg>
 								18 South Park, London
 							</a>
 						</li>
 					</ul>
 				</address>
+
+				<!-- Img -->
+				<picture class="footer__img">
+					<source
+						srcset="
+							./images/footer/puppy-mb.webp    1x,
+							./images/footer/puppy-mb@2x.webp 2x
+						"
+						type="image/webp"
+						media="(max-width: 767.98px)"
+					/>
+					<source
+						srcset="
+							./images/footer/puppy-mb.png    1x,
+							./images/footer/puppy-mb@2x.png 2x
+						"
+						type="image/png"
+						media="(max-width: 767.98px)"
+					/>
+
+					<source
+						srcset="
+							./images/footer/puppy-dt.webp    1x,
+							./images/footer/puppy-dt@2x.webp 2x
+						"
+						type="image/webp"
+						media="(min-width: 768px)"
+					/>
+					<source
+						srcset="
+							./images/footer/puppy-dt.png    1x,
+							./images/footer/puppy-dt@2x.png 2x
+						"
+						type="image/png"
+						media="(min-width: 768px)"
+					/>
+					<img
+						src="./images/footer/puppy-dt.png"
+						alt="cat and dog"
+						width="300"
+						height="310"
+						loading="lazy"
+					/>
+				</picture>
 			</div>
 		</footer>
+
+		<script src="./js/index.js" type="module"></script>
 	</body>
 </html>
